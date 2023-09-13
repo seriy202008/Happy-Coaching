@@ -66,6 +66,9 @@
             @media (max-width: $media-tb) {
                 top: 0;
             }
+            @media (max-width: $media-sm) {
+                display: none;
+            }
         }
         @media (max-width: $media-lt) {
             width: 30%;
