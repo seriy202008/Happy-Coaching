@@ -1,0 +1,106 @@
+.views {
+    background-color: $bg;
+    &--container {
+        padding-top: 120px;
+        padding-bottom: 220px;
+    }
+
+    &--title {
+        width: 47%;
+        margin-bottom: 37px;
+        @media (max-width: $media-tb) {
+            text-align: center;
+            margin: 0 auto 37px;
+        }
+        @media (max-width: $media-tbp) {
+            width: 100%;
+        }
+    }
+
+    &--list {
+        display: flex;
+        gap: 37px;
+        margin-right: -8%;
+        @media (max-width: $media-tb) {
+            flex-wrap: wrap;
+        }
+        @media (max-width: $media-tbp) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 0;
+        }
+    }
+
+    &--item {
+        flex: 1 1 30%;
+        background-color: transparent;
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        transition: all 250ms;
+        &:hover {
+            background-color: #fff;
+            .views--rating {
+                color: $first;
+            }
+        }
+        &-notOpacity {
+            background-color: #fff;
+        }
+        @media (max-width: $media-tb) {
+            flex: 0 1 45%;
+        }
+        @media (max-width: $media-tbp) {
+            width: 70%;
+        }
+        @media (max-width: $media-sm) {
+            width: 100%;
+        }
+    }
+
+    &--text {
+        color: #4a556c;
+        font-size: 24px;
+        line-height: 32px; /* 133.333% */
+        letter-spacing: -0.72px;
+        &::before {
+            content: '"';
+        }
+        &::after {
+            content: '"';
+        }
+    }
+
+    &--name {
+        color: #333461;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+        letter-spacing: -0.72px;
+    }
+
+    &--avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &--quality {
+        display: flex;
+        gap: 4px;
+    }
+    &--rating {
+        color: #dbdee6;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 40px; /* 133.333% */
+        letter-spacing: -0.9px;
+        transition: all 250ms;
+    }
+}

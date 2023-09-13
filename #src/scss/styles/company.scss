@@ -1,0 +1,28 @@
+.company {
+    &--container {
+        padding: 100px 35px;
+    }
+
+    &--preface {
+        color: #667085;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        margin-bottom: 32px;
+    }
+
+    &--list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        @media (max-width: $media-lt) {
+            flex-wrap: wrap;
+        }
+    }
+    &--item {
+        flex: 0 1 18%;
+    }
+}

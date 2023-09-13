@@ -1,0 +1,73 @@
+.subscribe {
+    background-color: $bg;
+    &--container {
+        padding: 48px 0;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $media-tbp) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &--body {
+        width: 60%;
+        @media (max-width: $media-tbp) {
+            width: 100%;
+        }
+    }
+
+    &--title {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 38px; /* 126.667% */
+    }
+
+    &--text {
+        color: #4a556c;
+        font-size: 20px;
+        line-height: 30px; /* 150% */
+    }
+
+    &--form {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        @media (max-width: $media-tb) {
+            flex-direction: column;
+        }
+        @media (max-width: $media-tbp) {
+            width: 50%;
+        }
+        @media (max-width: $media-sm) {
+            width: 100%;
+        }
+    }
+
+    &--input {
+        width: 280px;
+        display: block;
+        color: rgba(74, 85, 108, 0.5) !important;
+        font-family: $sans;
+        font-size: 1rem;
+        line-height: 24px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: 1px solid #d0d5dd;
+        background: #fff;
+        &:focus {
+            border: 2px solid #000000;
+        }
+        @media (max-width: $media-tb) {
+            width: 100%;
+        }
+    }
+
+    &--btn {
+        width: 150px;
+        @media (max-width: $media-tb) {
+            width: 100%;
+        }
+    }
+}

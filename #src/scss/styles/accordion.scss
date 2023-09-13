@@ -1,0 +1,69 @@
+.accordion {
+    &--item {
+        padding-bottom: 32px;
+        margin-top: 24px;
+        border-bottom: 1px solid #e4e7ec;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+            border: none;
+        }
+        display: flex;
+        gap: 24px;
+    }
+
+    &--content {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &--name {
+        color: #101828;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px; /* 155.556% */
+    }
+
+    &--text {
+        color: #4a556c;
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+        display: none;
+    }
+
+    &--btn {
+        display: block;
+        align-self: flex-start;
+        flex: 0 0 auto;
+        background-color: transparent;
+        &--open {
+            display: none;
+        }
+        &--close {
+            display: block;
+        }
+    }
+
+    &--open {
+        display: none;
+    }
+    &--close {
+        display: block;
+    }
+
+    &--item._open {
+        .accordion--open {
+            display: block;
+        }
+        .accordion--close {
+            display: none;
+        }
+        .accordion--text {
+            display: block;
+        }
+    }
+}

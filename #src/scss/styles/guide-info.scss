@@ -1,0 +1,103 @@
+.info {
+    position: relative;
+    &--container {
+        padding: 100px 0 40px;
+    }
+
+    &--title {
+        text-align: center;
+        width: 64%;
+        margin: 0 auto 16px;
+        span {
+            color: $first;
+        }
+        @media (max-width: $media-tbp) {
+            width: 100%;
+        }
+    }
+
+    &--text {
+        text-align: center;
+        width: 48%;
+        margin: 0 auto 40px;
+        color: rgba(74, 85, 108, 0.8);
+        font-size: 17px;
+        line-height: 25px; /* 147.059% */
+        @media (max-width: $media-tbp) {
+            width: 100%;
+        }
+    }
+
+    &--btn {
+        margin: 0 auto 70px;
+    }
+
+    &--quality {
+        margin: 0 auto;
+        width: 28%;
+    }
+
+    &--comment {
+        color: rgba(74, 85, 108, 0.5);
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &--rating {
+        margin: 0 auto;
+        width: 66px;
+    }
+
+    &--decor {
+        &-1 {
+            border-radius: 50%;
+            position: absolute;
+            width: 114px;
+            height: 114px;
+            top: 15%;
+            left: 15%;
+            z-index: -1;
+            img {
+                width: 100%;
+            }
+            @media (max-width: $media-tbp) {
+                display: none;
+            }
+        }
+
+        &-2 {
+            border-radius: 50%;
+            position: absolute;
+            width: 76px;
+            height: 76px;
+            top: 45%;
+            right: 15%;
+            z-index: -1;
+            img {
+                width: 100%;
+            }
+            @media (max-width: $media-tbp) {
+                display: none;
+            }
+        }
+
+        &-3 {
+            border-radius: 50%;
+            position: absolute;
+            width: 58px;
+            height: 58px;
+            bottom: 10%;
+            left: 10%;
+            z-index: -1;
+            img {
+                width: 100%;
+            }
+            @media (max-width: $media-tbp) {
+                display: none;
+            }
+        }
+    }
+}

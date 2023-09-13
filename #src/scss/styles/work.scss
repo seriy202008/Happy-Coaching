@@ -1,0 +1,117 @@
+.work {
+    &--container {
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+    }
+
+    &--header {
+        width: 50%;
+        &-full {
+            width: 100%;
+            > * {
+                text-align: center;
+            }
+        }
+        @media (max-width: $media-tb) {
+            width: 100%;
+        }
+    }
+
+    &--preface {
+        color: #4a556c;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        margin-bottom: 12px;
+    }
+
+    &--title {
+        margin-bottom: 20px;
+    }
+
+    &--description {
+        color: #4a556c;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+    }
+
+    &--body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        @media (max-width: $media-tb) {
+            flex-direction: column;
+        }
+    }
+
+    &--list {
+        flex: 0 1 44%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        @media (max-width: $media-tb) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        @media (max-width: $media-sm) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &--item {
+        display: flex;
+        gap: 16px;
+        @media (max-width: $media-tb) {
+            flex: 0 1 45%;
+            justify-content: space-between;
+        }
+        @media (max-width: $media-tbp) {
+            flex-direction: column;
+            align-items: center;
+            > * {
+                text-align: center;
+            }
+            flex: 0 1 40%;
+        }
+        @media (max-width: $media-sm) {
+            flex: 0 1 100%;
+        }
+    }
+
+    &--icon {
+        width: 48px;
+        height: 48px;
+        padding: 13px;
+        background-color: $bg;
+        border-radius: 50%;
+    }
+    &--text {
+        flex: 1 1 auto;
+    }
+    &--name {
+        margin-top: 8px;
+        color: #333461;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px; /* 126.316% */
+    }
+
+    &--par {
+        margin-top: 8px;
+        color: #667085;
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+    }
+
+    &--image {
+        flex: 0 1 49%;
+        img {
+            width: 100%;
+        }
+    }
+}
